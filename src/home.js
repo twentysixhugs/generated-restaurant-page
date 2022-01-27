@@ -25,7 +25,7 @@ const HomePage = (function() {
         
         const homePageDiv = document.createElement('div');
         homePageDiv.id = "home-page";
-        homePageDiv.classList.add("row-container");
+        homePageDiv.classList.add("col-container");
 
         const nodes = {
             phrase,
