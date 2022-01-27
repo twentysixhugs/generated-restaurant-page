@@ -52,6 +52,7 @@ function createSidebar() {
     nav.appendChild(ul);
     nav.classList.add('col-container');
 
+
     const div = document.createElement('div');
 
     div.classList.add('col-container');
@@ -62,7 +63,18 @@ function createSidebar() {
 
 
     const footer = document.createElement('footer');
-    footer.innerHTML = 'Made with love by <a href="https://github.com/twentysixhugs">twentysixhugs</a> :3';
+
+    const link = document.createElement('a');
+    link.id = 'github-link';
+    link.href = "https://github.com/twentysixhugs";
+    link.textContent = "twentysixhugs";
+
+    const leftText = document.createTextNode("Made with love by ");
+    const rightText = document.createTextNode(" :3");
+    
+    footer.appendChild(leftText);
+    footer.appendChild(link);
+    footer.appendChild(rightText);
 
     aside.appendChild(footer);
     
