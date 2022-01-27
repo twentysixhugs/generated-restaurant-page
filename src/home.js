@@ -9,11 +9,11 @@ const HomePage = (function() {
         hugPic.alt = "two people are hugging";
         hugPic.id = "hug-pic";
 
-        const question = document.createElement('h3');
+        const question = document.createElement('p');
         question.id = "question";
         question.textContent = "Have you ever been eating pizza alone with a strong desire to get hugs?";
 
-        const answer = document.createElement('h3');
+        const answer = document.createElement('p');
         answer.id = "answer";
         answer.textContent = "We are going to solve your problem!";
 
