@@ -54,6 +54,7 @@ aside {
     background-color: rgba(0, 0, 0, 0.5);
 
     animation: appear .5s;
+    margin-left: 2%;
 }
 
 /* Page-specific */
@@ -65,8 +66,6 @@ aside {
 }
 
 #home-page p {
-    width: 80%;
-
     color: whitesmoke;
     background: rgba(0, 0, 0, 0.5);
     animation: appear 1s;
