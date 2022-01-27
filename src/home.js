@@ -13,9 +13,9 @@ const HomePage = (function() {
         question.id = "question";
         question.textContent = "Have you ever been eating pizza alone with a strong desire to get hugs?";
 
-        const answer = document.createElement('p');
-        answer.id = "answer";
-        answer.textContent = "We are going to solve your problem!";
+        // const answer = document.createElement('p');
+        // answer.id = "answer";
+        // answer.textContent = "We are going to solve your problem!";
 
         const description = document.createElement('p');
         description.id = "main-description";
@@ -31,7 +31,7 @@ const HomePage = (function() {
             phrase,
             // hugPic,
             question,
-            answer,
+            // answer,
             description,
         };
 
