@@ -2,6 +2,7 @@ const Menu = (function() {
     function generate() {
         const page = document.createElement('div');
         page.id = "menu-page";
+        page.classList.add("col-container");
 
         const menuItems = [
             {
