@@ -27,7 +27,7 @@ const Menu = (function() {
             },
         ];
 
-        //process menu items
+        // process menu items
         for (let i = 0; i < menuItems.length; i++) {
             page.appendChild(_createMenuItem(
                 menuItems[i].name,
