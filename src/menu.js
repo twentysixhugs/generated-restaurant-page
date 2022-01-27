@@ -1,6 +1,7 @@
 const Menu = (function() {
     function generate() {
         const page = document.createElement('div');
+
         page.id = "menu-page";
         page.classList.add("col-container");
 
@@ -46,7 +47,7 @@ const Menu = (function() {
         const img = document.createElement('img');
         img.src = imgSrc;
 
-        //container for heading and description
+        // container for heading and description
         const itemContentContainer = document.createElement('div');
         itemContentContainer.classList.add("col-container", "item-content");
 
