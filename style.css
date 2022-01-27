@@ -1,0 +1,53 @@
+/* General */
+.row-container {
+    display: flex;
+}
+
+.col-container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+
+    background: url(./assets/background.jpg);
+    background-size: cover;
+}
+
+#content {
+    height: 100%;
+}
+
+#content > div.row-container {
+    height: 100%;
+    justify-content: space-between;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+/* Main header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+
+    background-color: rgba(0, 0, 0, 0.849);
+    color: whitesmoke;
+    letter-spacing: 0.560px;
+}
+
+/* Sidebar */
+aside {
+/*  position: -webkit-sticky;
+    position: sticky; */
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
