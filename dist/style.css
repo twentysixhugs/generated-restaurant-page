@@ -51,24 +51,56 @@ aside {
 /*  position: -webkit-sticky;
     position: sticky; */
     flex: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    animation: appear .5s;
+    justify-content: space-between;
     margin-left: 2%;
+
+    color: whitesmoke;
+    font-weight: 100;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    opacity: 0;
+    animation: appear 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+aside > * {
+    padding: 20px;
+}
+
+aside div:first-child {
+    flex: 2;
+}
+
+aside div:last-child {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+aside footer {
+    text-align: center;
+    font-size: 18px;
 }
 
 /* Page-specific */
 
 /* Homepage */
 #home-page {
+    margin: 32px 100% 32px -100%;
     flex: 3;
     justify-content: center;
 }
 
+#home-page.first-load {
+    animation: slide .5s forwards;
+    animation-delay: .5s;
+}
+
 #home-page p {
     color: whitesmoke;
-    background: rgba(0, 0, 0, 0.5);
-    animation: appear 1s;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 #phrase {
@@ -88,11 +120,19 @@ aside {
 
 
 @-webkit-keyframes appear {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from { opacity: 0;}
+    to { opacity: 1; }
 } 
 
 @keyframes appear {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from { opacity: 0;}
+    to { opacity: 1; }
+}
+
+@-webkit-keyframes slide {
+    100% { margin: 32px 0 32px 0};
+}
+
+@keyframes slide {
+    100% { margin: 32px 0 32px 0};
 }
