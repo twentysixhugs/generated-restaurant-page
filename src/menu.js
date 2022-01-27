@@ -7,7 +7,7 @@ const Menu = (function() {
         const menuItems = [
             {
                 name: "The Pizza Revolution",
-                description: "Revolutionary pizza with tomato and basil.",
+                description: "Revolutionary pizza with tomato, basil and love.",
                 imgSrc: "assets/pizza1.jpg"
             },
             {
