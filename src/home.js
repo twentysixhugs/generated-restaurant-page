@@ -4,10 +4,10 @@ const HomePage = (function() {
         phrase.textContent = "Not only tasty, but pleasant...";
         phrase.id = 'phrase';
 
-        const hugPic = document.createElement('img');
-        hugPic.src = "./assets/hug.png";
-        hugPic.alt = "two people are hugging";
-        hugPic.id = "hug-pic";
+        // const hugPic = document.createElement('img');
+        // hugPic.src = "./assets/hug.png";
+        // hugPic.alt = "two people are hugging";
+        // hugPic.id = "hug-pic";
 
         const question = document.createElement('p');
         question.id = "question";
@@ -29,7 +29,7 @@ const HomePage = (function() {
 
         const nodes = {
             phrase,
-            hugPic,
+            // hugPic,
             question,
             answer,
             description,
