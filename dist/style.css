@@ -37,6 +37,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 4px;
     height: 90px;
 
     background-color: rgba(0, 0, 0, 0.849);
@@ -45,9 +46,40 @@ header {
 }
 
 /* Sidebar */
+
 aside {
 /*  position: -webkit-sticky;
     position: sticky; */
-
+    flex: 1;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Page-specific */
+
+/* Homepage */
+#home-page {
+    flex: 3;
+    justify-content: center;
+}
+
+#home-page p {
+    width: 80%;
+
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#phrase {
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.770px;
+}
+
+#question, #main-description {
+    padding: 80px;
+
+    font-size: 32px;
+    font-weight: 200;
 }
