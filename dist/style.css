@@ -52,6 +52,8 @@ aside {
     position: sticky; */
     flex: 1;
     background-color: rgba(0, 0, 0, 0.5);
+
+    animation: appear .5s;
 }
 
 /* Page-specific */
@@ -67,6 +69,7 @@ aside {
 
     color: whitesmoke;
     background: rgba(0, 0, 0, 0.5);
+    animation: appear 1s;
 }
 
 #phrase {
@@ -82,4 +85,15 @@ aside {
 
     font-size: 32px;
     font-weight: 200;
+}
+
+
+@-webkit-keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
