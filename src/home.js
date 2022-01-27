@@ -1,4 +1,4 @@
-const HomePage = (function() {
+const Homepage = (function() {
     function generate() {
         // const hugPic = document.createElement('img');
         // hugPic.src = "./assets/hug.png";
@@ -41,4 +41,4 @@ const HomePage = (function() {
     return {generate};
 })();
 
-export default HomePage;
+export default Homepage;

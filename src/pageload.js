@@ -1,4 +1,4 @@
-import HomePage from './home';
+import Homepage from './home';
 
 function createHeader() {
     const header = document.createElement('header');
@@ -89,7 +89,7 @@ function createSidebar() {
 function init() {
     const header = createHeader();
     const sidebar = createSidebar();
-    const homepage = HomePage.generate();
+    const homepage = Homepage.generate();
 
     homepage.classList.add('first-load');
 
