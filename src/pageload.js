@@ -91,7 +91,7 @@ function init() {
     const sidebar = createSidebar();
     const homepage = Homepage.generate();
 
-    homepage.classList.add('first-load', 'current-page');
+    homepage.classList.add('current-page');
 
     const content = document.querySelector('#content');
     const div = document.createElement('div');
