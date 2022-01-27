@@ -27,8 +27,9 @@ function createSidebar() {
     contactBtn.id = "contact-btn";
 
     homeBtn.textContent = "Home";
+    homeBtn.classList.add('selected');
     menuBtn.textContent = "Menu";
-    contactBtn.textContent = "Contact us";
+    contactBtn.textContent = "Contacts";
 
     const buttons = [homeBtn, menuBtn, contactBtn];
 
@@ -43,25 +44,18 @@ function createSidebar() {
         li.appendChild(btn);
     }
 
-
-    const aside = document.createElement('aside');
-    aside.classList.add('col-container');
-
     const nav = document.createElement('nav');
-
     nav.appendChild(ul);
     nav.classList.add('col-container');
 
 
     const div = document.createElement('div');
-
     div.classList.add('col-container');
+
     div.appendChild(phrase);
     div.appendChild(nav);
 
-    aside.appendChild(div);
-
-
+    /* footer with text and link */
     const footer = document.createElement('footer');
 
     const link = document.createElement('a');
@@ -71,12 +65,22 @@ function createSidebar() {
 
     const leftText = document.createTextNode("Made with love by ");
     const rightText = document.createTextNode(" :3");
-    
+
     footer.appendChild(leftText);
     footer.appendChild(link);
     footer.appendChild(rightText);
 
-    aside.appendChild(footer);
+    const footerDiv = document.createElement('div');
+    footerDiv.classList.add('col-container');
+    
+    footerDiv.appendChild(footer);
+
+    
+    const aside = document.createElement('aside');
+    aside.classList.add('col-container');
+
+    aside.appendChild(div);
+    aside.appendChild(footerDiv);
     
     return aside;
 }
@@ -85,6 +89,8 @@ function init() {
     const header = createHeader();
     const sidebar = createSidebar();
     const homepage = HomePage.generate();
+
+    homepage.classList.add('first-load');
 
     const content = document.querySelector('#content');
     const div = document.createElement('div');

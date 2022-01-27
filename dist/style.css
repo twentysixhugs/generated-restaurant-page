@@ -45,6 +45,7 @@ header {
     letter-spacing: 0.560px;
 }
 
+
 /* Sidebar */
 
 aside {
@@ -54,9 +55,9 @@ aside {
     justify-content: space-between;
     margin-left: 2%;
 
+
     color: whitesmoke;
     font-weight: 100;
-
     background-color: rgba(0, 0, 0, 0.7);
 
     opacity: 0;
@@ -83,6 +84,38 @@ aside footer {
     text-align: center;
     font-size: 18px;
 }
+
+ul {
+    margin-top: 76px;
+
+    gap: 12px;
+
+    list-style: none;
+}
+
+button {
+    background: none;
+
+    height: 30px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+    color: whitesmoke;
+    border: none;
+    transition: all .4s;
+}
+
+button:hover {
+    transform: translateX(-10%);
+    transition: all .4s;
+}
+
+button.selected {
+    /* text-decoration: 2px underline; */
+    border-bottom: 2px solid whitesmoke;
+}
+
 
 /* Page-specific */
 
@@ -117,6 +150,8 @@ aside footer {
     font-size: 32px;
     font-weight: 200;
 }
+
+
 
 
 @-webkit-keyframes appear {
