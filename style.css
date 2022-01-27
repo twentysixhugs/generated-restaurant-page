@@ -15,6 +15,7 @@ body {
     font-family: 'Roboto', sans-serif;
 
     background: url(./assets/background.jpg);
+    background-clip: border-box;
     background-size: cover;
 }
 
@@ -28,8 +29,17 @@ body {
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 172px;
+    height: 130px;
+    margin: 10px;
+
+    border-radius: 16px;
+}
+
+#home-page p,
+#contacts-page p {
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.7);
 }
 /* Main header */
 
@@ -42,6 +52,7 @@ header {
 
     background-color: rgba(0, 0, 0, 0.849);
     color: whitesmoke;
+
     letter-spacing: 0.560px;
 }
 
@@ -51,7 +62,7 @@ header {
 aside {
 /*  position: -webkit-sticky;
     position: sticky; */
-    flex: 1;
+    width: 390px;
     justify-content: space-between;
     margin-left: 2%;
 
@@ -125,22 +136,16 @@ button.selected {
 
 /* Page-specific */
 
-/* Homepage */
-#home-page {
+#home-page, #contacts-page {
     margin: 32px 100% 32px -100%;
     flex: 3;
     justify-content: center;
-}
 
-#home-page.first-load {
     animation: slide .5s forwards;
     animation-delay: .5s;
 }
 
-#home-page p {
-    color: whitesmoke;
-    background: rgba(0, 0, 0, 0.7);
-}
+/* Home-page */
 
 #phrase {
     font-style: italic;
@@ -157,7 +162,48 @@ button.selected {
     font-weight: 200;
 }
 
+/* Contacts page */
 
+#contacts-page .col-container {
+    padding: 45px 55px 0 55px;
+    font-size: 20px;
+}
+
+/* Menu page */
+
+#menu-page {
+    padding: 12px;
+
+
+    margin-right: 100%;
+    margin-left: -100%;
+
+    animation: slide .3s forwards;
+    animation-delay: .2s;
+
+    flex: 3;
+    gap: 12px;
+    justify-content: center;
+
+    color: white;
+}
+
+.menu-item {
+    gap: 16px;
+
+    font-weight: 300;
+    font-size: 18px;
+
+    background:rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+
+}
+
+.menu-item h2 {
+    margin-bottom: 0;
+
+    font-weight: 500;
+}
 
 
 @-webkit-keyframes appear {
@@ -171,9 +217,9 @@ button.selected {
 }
 
 @-webkit-keyframes slide {
-    100% { margin: 32px 0 32px 0};
+    100% { margin-right: 0; margin-left: 0; };
 }
 
 @keyframes slide {
-    100% { margin: 32px 0 32px 0};
+    100% { margin-right: 0; margin-left: 0; };
 }
