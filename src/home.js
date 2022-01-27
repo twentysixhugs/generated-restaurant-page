@@ -29,9 +29,9 @@ const HomePage = (function() {
 
         const nodes = {
             phrase,
-            // hugPic,
             question,
             // answer,
+            // hugPic,
             description,
         };
 
