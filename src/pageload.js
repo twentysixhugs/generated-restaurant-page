@@ -8,8 +8,6 @@ function createHeader() {
 
     header.appendChild(h1);
 
-    header.classList.add('row-container');
-
     return header;
 }
 
