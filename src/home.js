@@ -1,9 +1,5 @@
 const HomePage = (function() {
     function generate() {
-        const phrase = document.createElement('p');
-        phrase.textContent = "Not only tasty, but pleasant...";
-        phrase.id = 'phrase';
-
         // const hugPic = document.createElement('img');
         // hugPic.src = "./assets/hug.png";
         // hugPic.alt = "two people are hugging";
@@ -32,7 +28,6 @@ const HomePage = (function() {
             // answer,
             // hugPic,
             description,
-            phrase,
         };
 
         for (const prop in nodes) {
