@@ -62,6 +62,7 @@ function createSidebar() {
     link.id = 'github-link';
     link.href = "https://github.com/twentysixhugs";
     link.textContent = "twentysixhugs";
+    link.target = "_blank";
 
     const leftText = document.createTextNode("Made with love by ");
     const rightText = document.createTextNode(" :3");
