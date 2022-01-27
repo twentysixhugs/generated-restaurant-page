@@ -28,11 +28,11 @@ const HomePage = (function() {
         homePageDiv.classList.add("col-container");
 
         const nodes = {
-            phrase,
             question,
             // answer,
             // hugPic,
             description,
+            phrase,
         };
 
         for (const prop in nodes) {
