@@ -64,10 +64,14 @@ function init() {
     const homepage = HomePage.generate();
 
     const content = document.querySelector('#content');
+    const div = document.createElement('div');
+    div.classList.add('row-container');
 
     content.appendChild(header);
-    content.appendChild(sidebar);
-    content.appendChild(homepage);
+    content.appendChild(div);
+
+    div.appendChild(homepage);
+    div.appendChild(sidebar);
 }
 
 export default init;
