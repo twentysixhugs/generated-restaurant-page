@@ -7,7 +7,7 @@ const Homepage = (function() {
 
         const question = document.createElement('p');
         question.id = "question";
-        question.textContent = "Have you ever been eating pizza alone with a strong desire to get hugs?";
+        question.textContent = "Have you ever been eating pizza alone with a strong desire to get hugs right now?";
 
         // const answer = document.createElement('p');
         // answer.id = "answer";
