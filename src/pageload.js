@@ -44,16 +44,21 @@ function createSidebar() {
     }
 
 
+    const aside = document.createElement('aside');
+    aside.classList.add('col-container');
+
     const nav = document.createElement('nav');
 
     nav.appendChild(ul);
     nav.classList.add('col-container');
 
-    const aside = document.createElement('aside');
-    aside.classList.add('col-container');
+    const div = document.createElement('div');
 
-    aside.appendChild(phrase);
-    aside.appendChild(nav);
+    div.classList.add('col-container');
+    div.appendChild(phrase);
+    div.appendChild(nav);
+
+    aside.appendChild(div);
 
 
     const footer = document.createElement('footer');
