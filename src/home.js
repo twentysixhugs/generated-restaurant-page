@@ -16,7 +16,7 @@ const HomePage = (function() {
         const description = document.createElement('p');
         description.id = "main-description";
         description.textContent = "Here at PizzaHug you can eat pizza and hug everybody you want.\
-         Even if you're not eating pizza!";
+        \nEven if you're not eating pizza.";
 
         
         const homePageDiv = document.createElement('div');
