@@ -24,7 +24,7 @@ function createSidebar() {
 
     homeBtn.id = "home-btn";
     menuBtn.id = "menu-btn";
-    contactBtn.id = "contact-btn";
+    contactBtn.id = "contacts-btn";
 
     homeBtn.textContent = "Home";
     homeBtn.classList.add('selected');
@@ -91,7 +91,7 @@ function init() {
     const sidebar = createSidebar();
     const homepage = Homepage.generate();
 
-    homepage.classList.add('first-load');
+    homepage.classList.add('first-load', 'current-page');
 
     const content = document.querySelector('#content');
     const div = document.createElement('div');
