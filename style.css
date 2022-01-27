@@ -103,11 +103,13 @@ button {
 
     color: whitesmoke;
     border: none;
+
     transition: all .4s;
+    cursor: pointer;
 }
 
 button:hover {
-    transform: translateX(-10%);
+    transform: translateX(-10%) scale(1.15);
     transition: all .4s;
 }
 
@@ -116,6 +118,10 @@ button.selected {
     border-bottom: 2px solid whitesmoke;
 }
 
+#github-link {
+    text-decoration: none;
+    color: rgb(255, 194, 81);
+}
 
 /* Page-specific */
 
