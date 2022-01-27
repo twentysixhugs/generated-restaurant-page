@@ -2,8 +2,9 @@ import HomePage from './home';
 
 function createHeader() {
     const header = document.createElement('header');
-    const h1 = document.createElement('h1');
+    header.classList.add("col-container");
 
+    const h1 = document.createElement('h1');
     h1.textContent = 'PizzaHug';
 
     header.appendChild(h1);
@@ -12,6 +13,11 @@ function createHeader() {
 }
 
 function createSidebar() {
+    const phrase = document.createElement('p');
+    phrase.textContent = "Not only tasty, but pleasant...";
+    phrase.id = 'phrase';
+
+
     const homeBtn = document.createElement('button');
     const menuBtn = document.createElement('button');
     const contactBtn = document.createElement('button');
@@ -37,6 +43,7 @@ function createSidebar() {
         li.appendChild(btn);
     }
 
+
     const nav = document.createElement('nav');
 
     nav.appendChild(ul);
@@ -45,6 +52,7 @@ function createSidebar() {
     const aside = document.createElement('aside');
     aside.classList.add('col-container');
 
+    aside.appendChild(phrase);
     aside.appendChild(nav);
 
 
