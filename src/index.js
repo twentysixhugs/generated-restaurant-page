@@ -45,12 +45,3 @@ function renderPage(newPage) {
 
     aside.insertAdjacentElement("beforebegin", newPage);
 }
-
-
-
-
-//должен убрать first-load с #home-page
-//очистка туть
-//один хендлер для кнопки, в нем внутри функция, куда передается что надо
-//должен быть иф, который проверит, что страница уже не сгенерирована.
-//добавить класс selected для buttons
